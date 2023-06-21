@@ -224,8 +224,8 @@
 width : 100% !important;
 }
 button#esw-fab{
-height:120px !important;
-width:120px !important;
+height:80px !important;
+width:80px !important;
 background-color: transparent;
 }
 button#esw-fab[aria-expanded="true"]{
@@ -233,14 +233,13 @@ height: 56px !important;
 width: 56px !important;
 bottom: 16px !important;
 }
-.embedded-service #esw-fab.showAnimation{
-animation:channelmenu-rotate-in-2-br-cw 0.5s ease-in both,channelmenu-shadow-pulse 2s infinite;
-}
+
 .embedded-service .fab div[class="icon_fab_container"] {
 width: 68px !important;
 height: 68px !important;
 background-size: 70px 70px !important;
 }
+
 .embedded-service .fab:hover:before, .embedded-service .fab:focus:before {
 
     background-color: transparent;
@@ -260,9 +259,10 @@ background-size: 70px 70px !important;
     animation: channelmenu-rotate-in-0-br-cw 0.0s ease-in both,channelmenu-shadow-pulse 0s 0s 0;
 }
   
-  .embedded-service .fab:focus {
+.embedded-service .fab:focus {
     box-shadow: 0 0 0px 0px transparent; 
 }
+  
 .embeddedServiceLiveAgentStateChatPlaintextMessageDefaultUI.chasitor.plaintextContent {
 color: black !important;
 }
@@ -271,14 +271,14 @@ color: black !important;
 <script type='text/javascript'>
 var initESW = function(gslbBaseURL) {
     // Required if you want labels in a language that’s different from your user’s context.
-    embedded_svc.menu.settings.language = 'es'; //For example, enter 'en' or 'en-US'
+    embedded_svc.menu.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
 	
 		embedded_svc.menu.init(
-			'https://psa-customerfirst.my.salesforce.com',
-			'https://d.la3-c1-cdg.salesforceliveagent.com/chat',
+			'https://psa-customerfirst--preprod.sandbox.my.salesforce.com',
+			'https://d.la3-c1cs-fra.salesforceliveagent.com/chat',
 			gslbBaseURL,
-			'00D0O000000YvX4',
-			'ES_Jeep_JAFAL'
+			'00D5t0000004fHO',
+			'FR_Abarth_JAFAL'
 		);
 };
 
@@ -300,7 +300,7 @@ if (isMobileDevice) {} else {
 
 if (!window.embedded_svc || !window.embedded_svc.menu) {
     var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst.my.salesforce.com/embeddedservice/menu/fab.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
     s.onload = function() {
         initESW(null);
     };
