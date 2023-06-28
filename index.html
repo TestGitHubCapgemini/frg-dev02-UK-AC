@@ -1,3 +1,8 @@
+<html lang="en">
+<head>
+  <title>chatbot prueba</title>
+</head>
+<body>
 <script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
 <style>
 .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon{
@@ -49,7 +54,7 @@ background-size: 70px 70px !important;
 <script type='text/javascript'>
 var initESW = function(gslbBaseURL) {
     // Required if you want labels in a language that’s different from your user’s context.
-    embedded_svc.menu.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
+    embedded_svc.menu.settings.language = 'pt_PT'; //For example, enter 'en' or 'en-US'
 	
 		embedded_svc.menu.init(
 			'https://psa-customerfirst--devhotfix.sandbox.my.salesforce.com',
@@ -78,7 +83,7 @@ if (isMobileDevice) {} else {
 
 if (!window.embedded_svc || !window.embedded_svc.menu) {
     var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--devhotfix.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
     s.onload = function() {
         initESW(null);
     };
@@ -87,3 +92,5 @@ if (!window.embedded_svc || !window.embedded_svc.menu) {
     initESW('https://service.force.com');
 }
 </script>
+</body>
+</html>
