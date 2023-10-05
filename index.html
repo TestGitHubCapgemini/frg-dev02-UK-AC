@@ -483,8 +483,17 @@
 .embedded-service .channelmenu {
 	z-index: 5000;
 }
-.embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon{
-width : 100% !important;
+@media screen and (min-width: 768px) {
+    .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon {
+        width: 100% !important;
+    }
+}
+	
+/* Media query for mobile view */
+@media screen and (max-width: 767px) {
+    .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon {
+        width: 70% !important;
+    }
 }
 	
 button#esw-fab{
