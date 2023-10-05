@@ -483,12 +483,6 @@
 .embedded-service .channelmenu {
 	z-index: 5000;
 }
-/* Media query for mobile view */
-@media screen and (max-width: 767px) {
-    .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon {
-        width: 70% !important;
-    }
-}
 	
 button#esw-fab{
 height:80px !important;
@@ -529,7 +523,12 @@ background-size: 70px 70px !important;
 .embedded-service .fab:focus {
     box-shadow: 0 0 0px 0px transparent; 
 }
-
+/* Media query for mobile view */
+@media screen and (max-width: 767px) {
+    .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon {
+        width: 70% !important;
+    }
+}
 </style>
 <script type='text/javascript'>
 var initESW = function(gslbBaseURL) {
