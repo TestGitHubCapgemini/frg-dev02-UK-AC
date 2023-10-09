@@ -473,19 +473,26 @@
 }
   
 .embeddedServiceSidebar.layout-float .dockableContainer {
-	z-index: 5000;
+	z-index: 11000;
 }
 
 .embedded-service .fab {
-	z-index: 5000;
+	z-index: 11000;
 }
 
 .embedded-service .channelmenu {
-	z-index: 5000;
+	z-index: 11000;
 }
 .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon{
 width : 100% !important;
 }
+/* Media query for mobile view */
+@media screen and (max-width: 767px) {
+    button#esw-fab {
+        bottom: 200px;
+    }
+}
+	
 button#esw-fab{
 height:80px !important;
 width:80px !important;
@@ -497,14 +504,6 @@ height: 56px !important;
 width: 56px !important;
 bottom: 16px !important;
 }
-/* Media query for mobile view */
-@media screen and (max-width: 767px) {
-    button#esw-fab {
-        bottom: 200px;
-    }
-}
-	
-
 .embedded-service .fab div[class="icon_fab_container"] {
 width: 68px !important;
 height: 68px !important;
