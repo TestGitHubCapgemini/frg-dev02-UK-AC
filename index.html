@@ -540,19 +540,6 @@ var initESW = function(gslbBaseURL) {
 			'IT_Fiat_JAFAL'
 		);
 };
-
-if(embedded_svc.isDesktop()){
-console.log('inside desktop');
-var style = document.createElement('style');
-		style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 80px !important;min-width: 80px !important;bottom: 90px}';
-		document.body.appendChild(style);
-}
-else if(!embedded_svc.isDesktop()){
-console.log('inside mobile');
-	var style = document.createElement('style');
-		style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 60px !important;min-width: 60px  !important;bottom: 200px}';
-		document.body.appendChild(style);
-}
 	
 var details = navigator.userAgent;
 // Creating a regular expression containing some mobile devices keywords to search it in details string
@@ -560,7 +547,9 @@ var regexp = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|com
 
 // Using test() method to search regexp in details
 var isMobileDevice = regexp.test(details);
-if (isMobileDevice) {} else {
+if (isMobileDevice) {
+	console.log('inside mobile');
+} else {
     console.log('inside desktop');
     var style = document.createElement('style');
     style.innerHTML = 
