@@ -551,6 +551,7 @@ if (isMobileDevice) {
 	console.log('inside mobile');
 	style.innerHTML = 
 	'.embeddedServiceHelpButton .uiButton { height: 80px !important; min-width: 80px !important; width: 80px; bottom: 200px}';
+	document.body.appendChild(style);
 } 
 else if(!isMobileDevice) {
     console.log('inside desktop');
