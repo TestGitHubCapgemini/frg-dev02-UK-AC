@@ -489,7 +489,6 @@ width : 100% !important;
 button#esw-fab{
 height:80px !important;
 width:80px !important;
-/*bottom: 90px;*/
 background-color: transparent;
 }
 	
@@ -551,8 +550,11 @@ if (isMobileDevice) {
 	console.log('inside mobile');
 	var style = document.createElement('style');
 	style.innerHTML = 
-	'.embeddedServiceHelpButton .uiButton { height: 80px !important; min-width: 80px !important; width: 80px; bottom: 200px}';
+	'.embeddedServiceHelpButton .uiButton { height: 80px !important; min-width: 80px !important; width: 80px; bottom: 90px}';
+	style.innerHTML += 'li#esw-cta_3mi7Y0000000014{pointer-events : none;opacity :0.4;}';
+        style.innerHTML += '.embedded-service .channelmenu_ctas > li:last-child{pointer-events : none;}';
 	style.innerHTML += 'button#esw-fab {bottom: 200px}';
+	style.innerHTML += '.embedded-service .channelmenu {bottom: 250px}';
 	document.body.appendChild(style);
 } 
 else if(!isMobileDevice) {
