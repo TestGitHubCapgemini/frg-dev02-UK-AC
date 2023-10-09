@@ -541,6 +541,27 @@ var initESW = function(gslbBaseURL) {
 		);
 };
 
+if(embedded_svc.isDesktop()){
+console.log('inside desktop');
+var style = document.createElement('style');
+		style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 120px !important;right:20px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 70px 70px !important;}';
+		style.innerHTML += '.embeddedServiceHelpButton .embeddedServiceIcon{ display : none !important}';
+		style.innerHTML += 'span.message{display : none !important}';
+		style.innerHTML += '.embeddedServiceSidebarMinimizedDefaultUI{height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 120px !important;right:20px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 70px 70px !important;}';
+		style.innerHTML += '.embeddedServiceHelpButton .helpButton .uiButton:hover::before, .embeddedServiceHelpButton .helpButton .uiButton:focus::before{display:none}';
+		document.body.appendChild(style);
+}
+if(!embedded_svc.isDesktop()){
+console.log('inside mobile');
+	var style = document.createElement('style');
+		style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 60px !important;min-width: 60px !important;width:60px;border-radius: 50% !important;bottom: 135px !important;right:-60px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 50px 50px !important;}';
+		style.innerHTML += '.embeddedServiceHelpButton .embeddedServiceIcon{ display : none !important}';
+		style.innerHTML += 'span.message{display : none !important}';
+		style.innerHTML += '.embeddedServiceSidebarMinimizedDefaultUI{height: 60px !important;min-width: 60px !important;width:60px;border-radius: 50% !important;bottom: 135px !important;right:-60px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 50px 50px !important;}';
+		style.innerHTML += '.embeddedServiceHelpButton .helpButton .uiButton:hover::before, .embeddedServiceHelpButton .helpButton .uiButton:focus::before{display:none}';
+		document.body.appendChild(style);
+}
+  
 var details = navigator.userAgent;
 // Creating a regular expression containing some mobile devices keywords to search it in details string
 var regexp = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i;
