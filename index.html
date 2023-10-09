@@ -549,6 +549,7 @@ var regexp = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|com
 var isMobileDevice = regexp.test(details);
 if (isMobileDevice) {
 	console.log('inside mobile');
+	var style = document.createElement('style');
 	style.innerHTML = 
 	'.embeddedServiceHelpButton .uiButton { height: 80px !important; min-width: 80px !important; width: 80px; bottom: 200px}';
 	document.body.appendChild(style);
