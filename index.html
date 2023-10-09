@@ -485,17 +485,7 @@
 }
 .embedded-service .fab div[class="icon_fab_container"] > img.esw-custom_icon{
 width : 100% !important;
-}
-/* Media query for mobile view */
-@media screen and (max-width: 767px) {
-    button#esw-fab {
-	height:80px !important;
-	width:80px !important;
-	bottom: 200px;
-	background-color: transparent;
-    }
-}
-	
+}	
 button#esw-fab[aria-expanded="true"]{
 height: 56px !important;
 width: 56px !important;
@@ -530,7 +520,17 @@ background-size: 70px 70px !important;
     box-shadow: 0 0 0px 0px transparent; 
 }
 
+/* Media query for mobile view */
+@media screen and (max-width: 767px) {
+    button#esw-fab {
+	height:80px !important;
+	width:80px !important;
+	bottom: 200px;
+	background-color: transparent;
+    }
+}
 
+	
 </style>
 <script type='text/javascript'>
 var initESW = function(gslbBaseURL) {
