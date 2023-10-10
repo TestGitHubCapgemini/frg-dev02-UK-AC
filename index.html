@@ -456,7 +456,7 @@
 </style>
 
 <!-- Embedded Service <-> LWC Wrapper -->
-     <script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
+      <script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
 <style>
  .label{
     background-color: transparent;
@@ -532,13 +532,13 @@ var initESW = function(gslbBaseURL) {
     embedded_svc.menu.settings.language = 'it'; //For example, enter 'en' or 'en-US'
 	
 		embedded_svc.menu.init(
-			'https://psa-customerfirst.my.salesforce.com',
-			'https://d.la3-c1-cdg.salesforceliveagent.com/chat',
+			'https://psa-customerfirst--preprod2.sandbox.my.salesforce.com',
+			'https://d.la3-c1cs-cdg.salesforceliveagent.com/chat',
 			gslbBaseURL,
-			'00D0O000000YvX4',
-			'IT_Fiat_JAFAL'
+			'00D7Y000000DnWB',
+			'IT_FT_TOPOLINO'
 		);
-};
+	};
 	
 var details = navigator.userAgent;
 // Creating a regular expression containing some mobile devices keywords to search it in details string
@@ -553,9 +553,8 @@ if (isMobileDevice) {
 	'.embeddedServiceHelpButton .uiButton { height: 80px !important; min-width: 80px !important; width: 80px; bottom: 90px}';
 	style.innerHTML += 'li#esw-cta_3mi7Y0000000014{pointer-events : none;opacity :0.4;}';
         style.innerHTML += '.embedded-service .channelmenu_ctas > li:last-child{pointer-events : none;}';
-	style.innerHTML += 'button#esw-fab {bottom: 195px}';
-	style.innerHTML += '.embedded-service .channelmenu {bottom: 245px}';
-	style.innerHTML += '.embeddedServiceSidebar.layout-float .dockableContainer {bottom: 255px}';
+	style.innerHTML += 'button#esw-fab {bottom: 195px; right:40px}';
+	style.innerHTML += '.embedded-service .channelmenu {bottom: 250px}';
 	style.innerHTML += '.embeddedServiceSidebar.sidebarMaximized.layout-float .minimizedContainer {bottom: 195px}';
 	document.body.appendChild(style);
 } 
@@ -576,7 +575,7 @@ else if(!isMobileDevice) {
 
 if (!window.embedded_svc || !window.embedded_svc.menu) {
     var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst.my.salesforce.com/embeddedservice/menu/fab.min.js');
+	s.setAttribute('src', 'https://psa-customerfirst--preprod2.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
     s.onload = function() {
         initESW(null);
     };
@@ -585,7 +584,6 @@ if (!window.embedded_svc || !window.embedded_svc.menu) {
     initESW('https://service.force.com');
 }
 </script>
-
 </body>
 </html>
 </body>
