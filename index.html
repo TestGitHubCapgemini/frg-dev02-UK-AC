@@ -456,126 +456,107 @@
 </style>
 
 <!-- Embedded Service <-> LWC Wrapper -->
-<script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
-<style type="text/css">
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #e1412d;
-		font-family: "Salesforce Sans", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #e1412d;
-	}
-	@font-face {
-	font-family: "Salesforce Sans";
-		src: url("https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff")
-			format("woff"),
-		  url("https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf")
-			format("truetype");
-	}
-	.embeddedServiceSidebar.modalContainer {
-		z-index: 5000000;
-	}
-	.helpButtonDisabled {
-		display: none !important;
-	}
-	.embeddedServiceHelpButton .helpButton {
-		bottom: 195px;
-		right: 75px;
-	}
-	.embeddedServiceSidebar.layout-docked .dockableContainer {
-		right: 75px;
-	}
-	.embeddedServiceSidebarButton {
-		background: #e1412d;
-	}
-	.embeddedServiceSidebarButton:not(:disabled):focus,
-	.embeddedServiceSidebarButton:not(:disabled):hover {
-	background: #e1412d;
-	}
-	.embeddedServiceSidebarButton.uiButton--inverse .label {
-	color: #e1412d;
-	}
-	.avatar.iconAvatar.agentIconColor0 {
-	background-color: #e1412d;
-	}
-	div.dockableContainer.showDockableContainer .avatar.iconAvatar.agentIconColor0 {
-		background-color: #9d0605;
-	}
-	div.dockableContainer.showDockableContainer .sidebarHeader[embeddedService-chatHeader_chatHeader] {
-		background: #6E6E6E;
-	}
-	div.dockableContainer.showDockableContainer p[embeddedService-chatHeaderAnnouncement_chatHeaderAnnouncement] {
-		background-color: #6E6E6E;
-	}
-	div.dockableContainer.showDockableContainer button.closeButton[embeddedService-chatHeader_chatHeader] {
-		padding: unset;
-	}
-	div.dockableContainer.showDockableContainer button.minimizeButton[embeddedService-chatHeader_chatHeader] {
-		padding: unset;
-	}
-	div.dockableContainer.showDockableContainer .embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #9d0605;
-	}
-	div.dockableContainer.showDockableContainer .embeddedServiceSidebarButton .label, .embeddedServiceSidebarButton:disabled .label {
-		background: none;
-	}
-	.embeddedServiceSidebarButton {
-		background: #9d0605;
-	}
-	.embeddedServiceSidebarMinimizedDefaultUI.newMessage, .embeddedServiceSidebarMinimizedDefaultUI.idleTimeout {
-		background-color: #6E6E6E; //REVISAR, PUEDE QUE NO SEA NECESARIO
-	}
-	.embeddedServiceLiveAgentStateChatPlaintextMessageDefaultUI.chasitor.plaintextContent {
-		background: #9d0605;
-	}
-
-	div.dockableContainer.showDockableContainer h2[embeddedService-chatHeader_chatHeader] {
-		color: white !important;
-	}
-	.embeddedServiceLiveAgentStateChatItem.chatMessage button {
-		text-transform: none;
-	}
-	h2[embeddedService-chatHeader_chatHeader] {
-		text-transform: none;
-	}
-	.embeddedServiceSidebarButton .label, .embeddedServiceSidebarButton:disabled .label {
-		text-transform: none;
-	}
-	.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput {
-		text-transform: none;
-	}
-	.embeddedServiceHelpButton .helpButton button.uiButton.helpButtonEnabled{
-		background: #9d0605;
-	}
-	div.dockableContainer.showDockableContainer button.endChatButton.closeChatButton.uiButton{
-		background: #9d0605;
-	}
-	div.dockableContainer.showDockableContainer button.saveTranscriptButton.uiButton span.label.bBody{
-		color: #9d0605;
-	}
-	button.dialogButton.dialog-button-0.uiButton.embeddedServiceSidebarButton{
-	  background-color: #9d0605;
-	}
-	button.dialogButton.dialog-button-1.uiButton.embeddedServiceSidebarButton span.label.bBody{
-	  color: #9d0605;
-	}
-	button.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton span.label.bBody{
-		color: #9d0605;
-	}
-	@media only screen and (min-width: 48em) {
-	  .embeddedServiceHelpButton .helpButton,
-	  .embeddedServiceHelpButton.embeddedServiceBottomTabBar .helpButton {
-		position: fixed;
-	}
-	button.closeButton{
-	  position: initial;
-	  margin: 0 0 0 0;
-	}
-	button.minimizeButton{
-	  position: initial;
-	  margin: 0 0 0 0;
-	}
-      .prechatContent {
+	</script>
+<style type='text/css'>
+.embeddedServiceHelpButton .helpButton .uiButton {
+background-color: #1B365D !important;
+font-family: "Salesforce Sans", sans-serif;
+}
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+outline: 1px solid #1B365D;
+}
+@font-face {
+font-family: 'Salesforce Sans';
+src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
+url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
+}
+.embeddedServiceSidebar.modalContainer {
+z-index: 5000000;
+}
+.helpButtonDisabled{
+        display: none !important;
+}
+  h2[embeddedService-chatHeader_chatHeader] {
+	color : White;
+}
+button[embeddedService-chatHeader_chatHeader]{
+	margin : 0em;
+	position : static;
+	padding : 1px 6px;
+}
+.endChatButton.saveTranscriptButton .label{
+	background-color : transparent;
+	color:#00A3E0;
+}
+.embeddedServiceSidebarButton{
+	background : #00A3E0;
+}
+.embeddedServiceSidebarButton:not(:disabled):focus, .embeddedServiceSidebarButton:not(:disabled):hover{
+	background : #00A3E0;
+}
+.embeddedServiceSidebarButton.uiButton--inverse .label{
+	color: #00A3E0;
+}
+.embeddedServiceSidebarButton .label, .embeddedServiceSidebarButton:disabled .label{
+	background : #00A3E0;
+}
+.dialogButton .label{
+	background-color : transparent;
+}
+.waitingCancelChat .label{
+	background-color : transparent;
+	color:#00A3E0;
+}
+.avatar.iconAvatar.agentIconColor0{
+	background-color:#00A3E0;
+}
+// New Tags SP13
+.embeddedServiceHelpButton .helpButton {
+    bottom: 60px;
+}
+div.dockableContainer.showDockableContainer div.sidebarBody .h3, h3 {
+    font-family: var(--cp-brand-font-1);
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: -.33px;
+    color: var(--cp-h3-color);
+    line-height: 2.1875rem;
+    text-align: left;
+    margin-top: 50px;
+}
+div.dockableContainer.showDockableContainer div.sidebarBody div.c-container.cPreChat .buttonclassAP {
+    font-size: var(--cp-button-fontsize, 0.75rem);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+}
+div.dockableContainer.showDockableContainer div.sidebarBody div.c-container.cPreChat {
+    margin-top: 0%;
+}
+  //AP SP13
+.embeddedServiceHelpButton .helpButton {
+    bottom: 60px;
+}
+div.dockableContainer.showDockableContainer div.sidebarBody .h3, h3 {
+    font-family: var(--cp-brand-font-1);
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: -.33px;
+    color: var(--cp-h3-color);
+    line-height: 2.1875rem;
+    text-align: left;
+    margin-top: 50px;
+}
+div.dockableContainer.showDockableContainer div.sidebarBody div.c-container.cPreChat .buttonclassAP {
+    font-size: var(--cp-button-fontsize, 0.75rem);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+}
+div.dockableContainer.showDockableContainer div.sidebarBody div.c-container.cPreChat {
+    margin-top: 0%;
+}
+  .prechatContent {
 margin: 0 1rem 0.5rem 1rem;
 width: 90%;
 }
@@ -593,10 +574,40 @@ font-size: 1rem;
 span.label.bBody {
 background-color: transparent;
 }
+  h5.cPreChat {
+
+    margin-top: 5px !important;
+
+color:black;
+
+font-size:12px !important;
+
+font-weight: bold;
+
+}
+
+.prechatUI div h5{
+
+color:black;
+
+font-size:12px !important;
+
+margin-top:5px !important;
+
+font-weight: bold;
+
+margin: 0 1rem 0.7rem 1rem;
+
+}
+
+.prechatUI .prechatContent .slds-form-element__control.slds-p-around_medium .uiInput.uiInputText.uiInput--default.uiInput--input{
+
+margin-top: 15px;
+
+    margin-bottom: 15px;
+
+}
 </style>
-
-
-
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
@@ -608,9 +619,9 @@ background-color: transparent;
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		embedded_svc.settings.loadingText = 'Cargando'; //(Defaults to Loading)
-		embedded_svc.settings.storageDomain = 'www.citroen.es'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+		embedded_svc.settings.storageDomain = 'www.peugeot.es'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
-        // Settings for Chat
+		// Settings for Chat
         embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			return prechatFormData[5].value;
         };
@@ -623,53 +634,43 @@ background-color: transparent;
 
 		embedded_svc.init(
 			'https://psa-customerfirst.my.salesforce.com',
-			'https://citroen.my-customerportal.com/citroen',
+			'https://peugeot.my-customerportal.com/peugeot',
 			gslbBaseURL,
 			'00D0O000000YvX4',
-			'ES_Chat_Citroen',
+			'ES_Chat_Peugeot',
 			{
 				baseLiveAgentContentURL: 'https://c.la3-c1-fra.salesforceliveagent.com/content',
 				deploymentId: '5721r0000004Fqg',
-				buttonId: '5731r000000btlf',
+				buttonId: '5731r000000btlg',
 				baseLiveAgentURL: 'https://d.la3-c1-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1r000000KzP1EAK_17332fb2261',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1r000000KzP3EAK_17332fdbe78',
 				isOfflineSupportEnabled: false
 			}
 		);
 	};
+
   
-  	
-	if(embedded_svc.isDesktop()){
+if(embedded_svc.isDesktop()){
         console.log('inside desktop');
         var style = document.createElement('style');
-			style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 40px !important;right:70px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 70px 70px !important;}';
+			style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 30px !important;right:60px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(0, 163, 224));background-repeat: no-repeat !important;background-size: 70px 70px !important;}';
 			style.innerHTML += '.embeddedServiceHelpButton .embeddedServiceIcon{ display : none !important}';
 			style.innerHTML += 'span.message{display : none !important}';
-			style.innerHTML += '.embeddedServiceSidebarMinimizedDefaultUI{height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 40px !important;right:70px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 70px 70px !important;}';
+			style.innerHTML += '.embeddedServiceSidebarMinimizedDefaultUI{height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 30px !important;right:60px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(0, 163, 224));background-repeat: no-repeat !important;background-size: 70px 70px !important;}';
 			style.innerHTML += '.embeddedServiceHelpButton .helpButton .uiButton:hover::before, .embeddedServiceHelpButton .helpButton .uiButton:focus::before{display:none}';
-			style.innerHTML += '.embeddedServiceHelpButton .helpButton {bottom:50; right:0px}';
 			document.body.appendChild(style);
     }
     if(!embedded_svc.isDesktop()){
         console.log('inside mobile');
 		var style = document.createElement('style');
-			style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 60px !important;min-width: 60px !important;width:60px;border-radius: 50% !important;bottom: 135px !important;right:20px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 50px 50px !important;}';
+			style.innerHTML = '.embeddedServiceHelpButton .uiButton{ height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 140px !important;right:20px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(0, 163, 224));background-repeat: no-repeat !important;background-size: 50px 50px !important;}';
 			style.innerHTML += '.embeddedServiceHelpButton .embeddedServiceIcon{ display : none !important}';
 			style.innerHTML += 'span.message{display : none !important}';
-			style.innerHTML += '.embeddedServiceSidebarMinimizedDefaultUI{height: 60px !important;min-width: 60px !important;width:60px;border-radius: 50% !important;bottom: 135px !important;right:20px !important;background-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(235, 100, 40));background-repeat: no-repeat !important;background-size: 50px 50px !important;}';
+			style.innerHTML += '.embeddedServiceSidebarMinimizedDefaultUI{height: 80px !important;min-width: 80px !important;width:80px;border-radius: 50% !important;bottom: 140px !important;right:20px !importantbackground-image: url(https://psa-customerfirst--c.eu43.visual.force.com/resource/1651716398000/ChatAvatar) !important;border: 5px solid var(--lwc-colorBackgroundButtonBrand,rgb(0, 163, 224));background-repeat: no-repeat !important;background-size: 50px 50px !important;}';
 			style.innerHTML += '.embeddedServiceHelpButton .helpButton .uiButton:hover::before, .embeddedServiceHelpButton .helpButton .uiButton:focus::before{display:none}';
 			document.body.appendChild(style);
     }
   
-  
-	//Setting to diferenciate if its Desktop version or Mobile
-	if(!embedded_svc.isDesktop()){
-    
-        var style = document.createElement('style');
-          style.innerHTML = '.embeddedServiceHelpButton .helpButton{ bottom: 70px;}';
-          
-          document.body.appendChild(style);
-	}
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://psa-customerfirst.my.salesforce.com/embeddedservice/5.0/esw.min.js');
