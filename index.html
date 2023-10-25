@@ -561,10 +561,10 @@ var initESW = function(gslbBaseURL) {
     embedded_svc.menu.settings.language = 'it'; //For example, enter 'en' or 'en-US'
 	
 		embedded_svc.menu.init(
-			'https://psa-customerfirst--hulk2.sandbox.my.salesforce.com',
+			'https://psa-customerfirst--preprod2.sandbox.my.salesforce.com',
 			'https://d.la3-c1cs-cdg.salesforceliveagent.com/chat',
 			gslbBaseURL,
-			'00D7Z00000056yD',
+			'00D7Y000000DnWB',
 			'IT_FT_TOPOLINO'
 		);
 	};
@@ -606,7 +606,7 @@ else if(!isMobileDevice) {
 
 if (!window.embedded_svc || !window.embedded_svc.menu) {
     var s = document.createElement('script');
-	s.setAttribute('src', 'https://psa-customerfirst--hulk2.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
+	s.setAttribute('src', 'https://psa-customerfirst--preprod2.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
     s.onload = function() {
         initESW(null);
     };
