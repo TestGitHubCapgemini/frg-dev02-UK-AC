@@ -489,6 +489,15 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
+		document.addEventListener(
+					"setCustomField",
+					function(event) {
+						embedded_svc.settings.extraPrechatFormDetails[0].value = event.detail.customField;
+						// Fire startChat callback.
+						event.detail.callback();
+					},
+					false
+				);
 
 		embedded_svc.init(
 			'https://psa-customerfirst--dev03.sandbox.my.salesforce.com',
