@@ -572,26 +572,18 @@
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
-		embedded_svc.init(
+		embedded_svc.menu.init(
 			'https://psa-customerfirst--dev03.sandbox.my.salesforce.com',
-			'https://psa-customerfirst--dev03.sandbox.my.site.com/PSADealer',
+			'https://d.la3-c1cs-fra.salesforceliveagent.com/chat',
 			gslbBaseURL,
 			'00D7Z00000054Zp',
-			'Chat_Topolino_IT_FRG',
-			{
-				baseLiveAgentContentURL: 'https://c.la3-c1cs-fra.salesforceliveagent.com/content',
-				deploymentId: '57269000000sXvf',
-				buttonId: '5737Z00000007JW',
-				baseLiveAgentURL: 'https://d.la3-c1cs-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I7Z0000004DVaUAM_18ba575782c',
-				isOfflineSupportEnabled: false
-			}
+			'IT_Fiat_Topolino_ALL'
 		);
 	};
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--dev03.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--dev03.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
